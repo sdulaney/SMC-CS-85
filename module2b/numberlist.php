@@ -8,14 +8,12 @@
 
 <?php
 
-    $n = 1;
-    while ($n <= 100)
-    {
-        if ($n % 2 == 0)
-        {
-            echo ($n . "<br>");
+    $currentNumber = 1;
+    while ($currentNumber <= 100) {
+        if ($currentNumber % 2 == 0) {
+            echo "<h2>", $currentNumber, "</h2>";
         }
-        $n++;
+        $currentNumber++;
     }
 
 ?>
