@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="10ac15aa-7c54-4dab-b889-0b348052b3a3" name="www.smccs85.com" url="http://www.smccs85.com">
+        <fileTransfer host="www.smccs85.com" port="22" rootFolder="/home/sdulaney/public_html/" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
