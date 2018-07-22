@@ -7,8 +7,8 @@
 if (empty($_POST['first_name']) || empty($_POST['last_name'])) {
     echo "<p>You must enter your first and last name! Click your browser's Back button to return to the Guest Book form.</p>";
 } else {
-    $user = "root";
-    $password = "";
+    $user = "sdulaney";
+    $password = "p5U5TXdX";
     $host = "localhost";
 
     $DBConnect = mysqli_connect($host, $user, $password);
@@ -18,7 +18,7 @@ if (empty($_POST['first_name']) || empty($_POST['last_name'])) {
     if ($DBConnect === FALSE) {
         echo "<p>Unable to connect to the database server.</p>" . "<p>Error code " . mysqli_errno() . ": " . mysqli_error() . "</p>";
     } else {
-        $DBName = "guestbook";
+        $DBName = "sdulaney_module10a";
         /*
          * If mysqli_select_db returns FALSE, create the database using mysqli_query.
          */

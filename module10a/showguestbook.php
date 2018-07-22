@@ -9,8 +9,8 @@
 
 <?php
 
-    $user = "root";
-    $password = "";
+    $user = "sdulaney";
+    $password = "p5U5TXdX";
     $host = "localhost";
 
     $DBConnect = mysqli_connect($host, $user, $password);
@@ -21,7 +21,7 @@
     if ($DBConnect === FALSE) {
         echo "<p>Unable to connect to the database server.</p>" . "<p>Error code " . mysqli_errno() . ": " . mysqli_error() . "</p>";
     } else {
-        $DBName = "guestbook";
+        $DBName = "sdulaney_module10a";
         /*
          * If mysqli_select_db returns FALSE, output a message indicating there are no entries in the guest book.
          */
