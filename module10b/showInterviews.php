@@ -9,15 +9,15 @@
 
 <?php
 
-$user = "root";
-$password = "";
+$user = "sdulaney";
+$password = "p5U5TXdX";
 $host = "localhost";
 
 $DBConnect = mysqli_connect($host, $user, $password);
 if ($DBConnect === FALSE) {
     echo "<p>Unable to connect to the database server.</p>" . "<p>Error code " . mysqli_errno() . ": " . mysqli_error() . "</p>";
 } else {
-    $DBName = "candidate_database";
+    $DBName = "sdulaney_module10b";
     if (!mysqli_select_db($DBConnect, $DBName)) {
         echo "<p>There are no entries in the Candidate Database!</p>";
     } else {

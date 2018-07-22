@@ -3,15 +3,15 @@
 if (empty($_POST['interview_date']) || empty($_POST['interviewer_name']) || empty($_POST['interviewer_position']) || empty($_POST['candidate_name']) || empty($_POST['communication_abilities']) || empty($_POST['computer_skills']) || empty($_POST['business_knowledge']) || empty($_POST['interviewers_comments'])) {
     echo "<p>You must enter all form fields! Click your browser's Back button to return to the Add Interview form.</p>";
 } else {
-    $user = "root";
-    $password = "";
+    $user = "sdulaney";
+    $password = "p5U5TXdX";
     $host = "localhost";
 
     $DBConnect = mysqli_connect($host, $user, $password);
     if ($DBConnect === FALSE) {
         echo "<p>Unable to connect to the database server.</p>" . "<p>Error code " . mysqli_errno() . ": " . mysqli_error() . "</p>";
     } else {
-        $DBName = "candidate_database";
+        $DBName = "sdulaney_module10b";
         if (!mysqli_select_db($DBConnect, $DBName)) {
             $SQLstring = "CREATE DATABASE $DBName";
             $QueryResult = mysqli_query($DBConnect, $SQLstring);
