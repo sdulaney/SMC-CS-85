@@ -109,6 +109,9 @@ class OrganizationContact extends BaseContact
     <br>
 <?php
     // Example the reserved word "new"
+    /*
+     * In PHP, the keyword new is used to create an instance of a class.
+     */
     $angelo = new PersonContact();
     $angelo->set_name("Angelo Roncalli");
     $angelo->phone_number = "777-777-7777";
